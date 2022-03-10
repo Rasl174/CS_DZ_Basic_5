@@ -15,9 +15,11 @@ namespace CS_DZ_Basic_5
 
             Console.WriteLine("Имя - " + firstName + "   Фамилия - " + lastName);
 
-            firstName = "Саша";
-            lastName = "Иванов";
+            string changeName = firstName;
 
+            firstName = lastName;
+            lastName = changeName;
+            
             Console.WriteLine("\nУпс ошибка.");
             Console.WriteLine("Имя - " + firstName + "   Фамилия - " + lastName);
         }
